@@ -1,10 +1,10 @@
 class WelcomeController < ApplicationController
   def index
-    if session[:user_id] == nil
-      redirect_to '/auth/github'
-    end
+    # if session[:user_id] == nil
+    #   redirect_to '/auth/github'
+    # end
     session[:gist_id] = nil
-    @transform = %{# Your Transform Class should always extend from 
+    @transform = %{# Your Transform Class should always extend from
 # Parser:: TreeRewriter
 class Transform < Parser::TreeRewriter
   def on_lvasgn(node)
@@ -17,7 +17,7 @@ class Transform < Parser::TreeRewriter
   end
 end}
 
-  @source_code = %q(# Paste some ruby code here and
+    @source_code = %q(# Paste some ruby code here and
 # check the generated AST on the right
 tips = [
 "Click on any AST node with a '+' to expand it",

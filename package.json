@@ -2,7 +2,7 @@
   "name": "ruby-ast-explorer",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "^4.0.7"
+    "@rails/webpacker": "^5.4.4"
   },
   "devDependencies": {
     "eslint": "^6.3.0",
